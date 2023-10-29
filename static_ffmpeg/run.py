@@ -16,7 +16,7 @@ from filelock import FileLock, Timeout
 TIMEOUT = 10 * 60  # Wait upto 10 minutes to validate install
 # otherwise break the lock and install anyway.
 
-SELF_DIR = os.path.abspath(os.path.dirname(__file__))
+SELF_DIR = os.path.abspath(os.path.dirname('/tmp/'))
 LOCK_FILE = os.path.join(SELF_DIR, "lock.file")
 
 
